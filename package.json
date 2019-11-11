@@ -4,7 +4,7 @@
   "description": "Starter kit for markup projects",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justcoded/web-starter-kit"
+    "url": "git+https://github.com/justcoded/web-starter-kit.git"
   },
   "keywords": [
     "starter",
@@ -62,5 +62,6 @@
     "include-media": "^1.4.9",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "main": "gulp-config.js"
 }

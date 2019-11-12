@@ -1,0 +1,199 @@
+body{
+    margin: 0 auto;
+}
+
+.loginContent{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    .loginLeft{
+        width: 539px;
+        padding-top: 56px;
+        padding-left: 76px;
+        @media only screen and (max-width: 990px) {
+            text-align: center;
+            width: 100%;
+            padding-left: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logo{
+            padding-bottom: 130px;
+            @media only screen and (max-width: 990px) {
+                padding-bottom: 70px;
+            }
+            a{
+                color: #417505;
+                font-family: "Rubik Light", sans-serif;
+                font-size: 27px;
+                font-weight: 300;
+                letter-spacing: 0.74px;
+                padding: 4px;
+                border-radius: 5px;
+                &:hover{
+                    text-decoration: none;
+                    background-color: #417505;
+                    color: #fff;
+                }
+            }
+        }
+        .loginTitle{
+            color: #1b1e24;
+            font-family: Roboto, sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            padding-bottom: 8px;
+        }
+        .loginText{
+            color: #252631;
+            font-family: "Roboto Light", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 21px;
+            padding-bottom: 43px;
+            width: 342px;
+            max-width: 90%;
+            @media only screen and (max-width: 990px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .loginForm{
+            form{
+                .loginFormElem{
+                    padding-bottom: 18px;
+                    label{
+                        margin-bottom: 13px;
+                        color: #252631;
+                        font-family: "Roboto Light", sans-serif;
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                    input[type='text']{
+                        width: 360px;
+                        max-width: 90%;
+                        height: 52px;
+                        border-radius: 4px;
+                        border: 1px solid #e8ecef;
+                        background-color: #ffffff;
+                        padding: 18px 16px;
+                        color: #98a9bc;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .loginRememberRecover {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-top: 30px;
+            @media only screen and (max-width: 990px) {
+                width: 350px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media only screen and (max-width: 420px) {
+                width: 320px;
+                max-width: 90%;
+            }
+            .loginCheckbox {
+                width: 50%;
+                input[type=checkbox], input[type=radio] {
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                    width: 20px;
+                    height: 20px;
+                }
+                a{
+                    color: #778ca2;
+                    font-family: "Roboto Light", sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-decoration: none;
+                }
+            }
+            .loginRecover {
+                width: 50%;
+                
+                a{
+                    color: #252631;
+                    font-family: "Roboto Medium", sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 4px;
+                    border-radius: 5px;
+                    &:hover{
+                        text-decoration: none;
+                        color: #fff;
+                        background-color: #417505;
+                    }
+                }
+            }
+        }
+        .signInBtn{
+            width: 373px;
+            height: 54px;
+            margin-top: 26px;
+            background-color: #417505;
+            text-align: center;
+            display: table;
+            border-radius: 5px;
+            margin-bottom: 245px;
+            @media only screen and (max-width: 990px) {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 65px;
+            }
+            @media only screen and (max-width: 420px) {
+                width: 300px;
+            }
+            @media only screen and (max-width: 420px) {
+                width: 250px;
+            }
+            &:hover{
+                background-color: #daf3bd;
+                border: 2px solid #417505;
+            }
+            a{
+                display: table-cell;
+                vertical-align: middle;
+                color: #fff;
+                font-family: "Roboto Medium", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0.3px;
+                &:hover{
+                    text-decoration: none;
+                    color: #417505;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .loginRight{
+        width: calc(100vw - 539px);
+        min-height: 900px;
+        background-position: center;
+        background-size: cover;
+        @media only screen and (max-width: 990px) {
+            display: none;
+        }
+    }
+}

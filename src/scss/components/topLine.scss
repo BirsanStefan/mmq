@@ -1,11 +1,11 @@
 @import '../pages/main.scss';
 
 .topLine{
-    width: 1198px;
+    width: calc(100vw - 242px);
     min-height: 64px;
     padding: 20px 34px 20px 26px;
-    border-bottom: 2px solid #f8fafb;
-    border-left: 2px solid #f8fafb;
+    border-bottom: 2px solid #e8ecef;
+    background: #fff;
     margin-bottom: 24px;
     display: -webkit-flex;
     display: -moz-flex;
@@ -14,7 +14,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 768px){
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
     .left{
+        @media only screen and (max-width: 768px){
+            margin-bottom: 15px;
+        }
         .anonymousClientListL{
             color: #252631;
             font-family: Roboto, sans-serif;
@@ -40,6 +48,10 @@
             padding-left: 12px;
             padding-right: 12px;
             position: relative;
+            @media only screen and (max-width: 405px) {
+                padding-left: 35px;
+                padding-right: 35px;
+            }
             &:hover{
                 text-decoration: none;
                 color: #417505;

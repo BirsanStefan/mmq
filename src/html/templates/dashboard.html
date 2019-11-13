@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+	
+  <div class="wrapper">
+
+    @@include('../partials/components/leftCol.html')
+
+    <div class="mainContent">
+        @@include('../partials/components/topLine.html', {
+            "title": "Anonymous Client List"
+        })
+
+        <div class="dashboard">
+
+            <div class="dasboardImg">
+              <a href="#">
+                <img src="./assets/images/dashboard.png" alt="">
+              </a>
+            </div>
+            
+
+            <div class="dashboardText">Lets get started! To begin create your first anonymous list by clicking the button below.</div>
+
+            <form action="" class="subsidyForm">
+              <input class="greenBtn" type="submit" value="CREATE NEW LIST">
+            </form>
+        </div>
+
+        @@include('../partials/components/footer.html')
+    </div>
+    
+  </div>
+
+  @@include('../partials/scripts/common.html')
+</body>
+
+</html>

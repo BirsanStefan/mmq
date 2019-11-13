@@ -6,6 +6,8 @@ body{
 .wrapper {
     display: flex;
 }
+
+/*mainContent class START*/
 .mainContent{
     background: #f8fafb;
     min-height: calc(100vh);
@@ -13,6 +15,10 @@ body{
         width: 100%;
     }
 }
+/*mainContent class END*/
+
+
+/*whiteBox class START*/
 .whiteBox{
     width: calc(100vw - 290px);
     background: #fff;
@@ -23,6 +29,7 @@ body{
         width: 100%;
     }
 }
+/*whiteBox class END*/
 
 /*Login START*/
 .loginContent{
@@ -491,7 +498,8 @@ body{
             #group2{
                 padding-left: 10px;
             }
-            .submitBtn{
+            /*greenBtn class START*/
+            .greenBtn{
                 width: 250px;
                 height: 54px;
                 text-align: center;
@@ -513,9 +521,65 @@ body{
                     font-weight: 600;
                 }
             }
-            
+            /*greenBtn class END*/
+        }
+    } 
+}
+
+
+/*susidy.html END*/
+
+/*dashboard.html START*/
+.dashboard{
+    text-align: center;
+    padding-top: 76px;
+    padding-bottom: 100px;
+    .dasboardImg{
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        a{
+            img{
+                margin-bottom: 45px;
+            }
         }
     }
     
+    
+    .dashboardText{
+        color: #778ca2;
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+        width: 330px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*greenBtn class START*/
+    .greenBtn{
+        width: 250px;
+        height: 54px;
+        text-align: center;
+        border: none;
+        border-radius: 10px 2px 2px;
+        background: #417505;
+        margin-top: 50px;
+        color: #ffffff;
+        font-family: "Roboto Medium",sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        transition: all .25s linear;
+        &:hover{
+            background: #f8fafb;
+            color: #417505;
+            border: 1px solid #417505;
+            font-weight: 600;
+        }
+    }
+    /*greenBtn class END*/
 }
-/*susidy.html END*/
+/*dashboard.html END*/

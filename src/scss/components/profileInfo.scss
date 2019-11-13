@@ -8,7 +8,6 @@
         height: 56px;
         border-bottom:1px solid #f2f4f6;
         color: #252631;
-        font-family: Roboto;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.2px;
@@ -25,7 +24,6 @@
         border: 1px solid #e8ecef;
         background-color: #ffffff;
         color: #98a9bc;
-        font-family: Roboto;
         font-size: 14px;
         font-weight: 400;
     }
@@ -34,7 +32,6 @@
         display: flex;
         align-items:center;
         color: #252631;
-        font-family: "Roboto Light";
         font-size: 14px;
         font-weight: 300;
     }
@@ -46,10 +43,14 @@
         border-radius: 4px;
         border:none;
         color: #ffffff;
-        font-family: "Roboto Medium";
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.3px;
         text-transform: uppercase;
+    }
+    .updateProfile:hover {
+        background-color: #daf3bd;
+        border: 2px solid #417505;
+        color:#417505;
     }
 }

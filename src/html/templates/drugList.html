@@ -10,26 +10,23 @@
 
 
         @@include('../partials/scripts/common.html')
-
         
-
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css
-        ">
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
         "></script>
         <script>
        
-            $(document).ready(function() {
-                $('#drugTable').DataTable();
-            } );
-
-            // oTable = $('#drugTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
-            // $('#myInputTextField').keyup(function(){
-            //     oTable.search($(this).val()).draw() ;
-            // })
-        </script>
-    </body>
+            // $(document).ready(function() {
+            //     $('#drugTable').DataTable();
+            // } );
     
+            oTable = $('#drugTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+            $('#myInputTextField').keyup(function(){
+                oTable.search($(this).val()).draw() ;
+            })
+        </script>
+       
+    </body>
+  
 
 </html>
 

@@ -1,0 +1,45 @@
+.viewAll {
+    width: 152px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #eb9b50;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+}
+.viewAll:hover{
+    background-color: #ffdcaf;
+    color: #eb9b50;
+    text-decoration: none;
+    border: 1px solid #eb9b50;
+}
+.topViewCtn {
+width:30%;
+
+.topViewItem {
+    color: #000000;
+    font-weight: 700;
+}
+.topViewL {
+    @extend .topViewItem;
+    font-size: 25px;
+}
+.topViewS {
+@extend .topViewItem;
+font-size:20px;
+}
+.topViewXS {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.greenPrice {
+    @extend .topViewS;
+    color: #417505;
+}
+}

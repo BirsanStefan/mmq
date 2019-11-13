@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 901px){
         width: 100%;
         display: block;
         text-align: center;
@@ -29,12 +29,19 @@
             font-size: 20px;
             font-weight: 400;
             letter-spacing: 0.2px;
+            @media only screen and (max-width: 950px){
+                font-size: 18px;
+            }
             &:hover{
                 text-decoration: none;
                 color: #417505;
             }
             img{
                 margin-right: 32px;
+                @media only screen and (max-width: 405px){
+                    padding-bottom: 15px;
+                }
+                
             }
         }
     }
@@ -52,6 +59,14 @@
                 padding-left: 35px;
                 padding-right: 35px;
             }
+            @media only screen and (max-width: 351px) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            @media only screen and (max-width: 328px) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
             &:hover{
                 text-decoration: none;
                 color: #417505;
@@ -59,6 +74,9 @@
             
             img{
                 margin-right: 15px;
+                @media only screen and (max-width: 405px){
+                    padding-bottom: 15px;
+                }
             }
         }
         .green{
@@ -72,6 +90,13 @@
                 background: #417505;
                 top: -2px;
                 left: 28px;
+                @media only screen and (max-width: 405px) {
+                    left: 50px;
+                    top: -10px;
+                }
+                @media only screen and (max-width: 328px) {
+                    left: 35px;
+                }
             }
         }
         .pink{
@@ -85,6 +110,13 @@
                 background: #fe4d97;
                 top: -2px;
                 left: 28px;
+                @media only screen and (max-width: 405px) {
+                    left: 50px;
+                    top: -10px;
+                }
+                @media only screen and (max-width: 328px) {
+                    left: 35px;
+                }
             }
         }
     }

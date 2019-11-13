@@ -14,7 +14,6 @@
 
         .topMenuTitle {
             color: #252631;
-            font-family: Roboto;
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0.2px;
@@ -32,13 +31,25 @@
             border-radius: 4px;
             border: 1px solid #e8ecef;
             background-color: #ffffff;
+            text-decoration:none;
             
             .iconItem {
                 width:42px;
                 height:42px;
                 background-color: #8fa871;
                 border-radius: 50%;
+                position:relative;
 
+             }
+             
+            .iconItem:hover {
+                background-color: #417505;
+            }
+            .iconItemImg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
             .menuItemText {
                 @extend .flex-space-btw;
@@ -51,14 +62,12 @@
                 }
                 .titleItem {
                     color: #252631;
-                    font-family: "Roboto Medium";
                     font-size: 12px;
                     font-weight: 500;
                     text-transform: uppercase;
                 }
                 .infoItem {
                     color: #98a9bc;
-                    font-family: Roboto;
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 21px;

@@ -66,33 +66,49 @@
                 </a>
             </div>
         </div>
-        <form class="formProfile">
-            <div class="formProfileTitle padl23">
-                <span class="formTitle">Profile Information</span>
-            </div>
-            <div class="formContent">
-            <label class="label">Zip Code</label>
-            <input class="input" type="text" placeholder="45202">
-            <label class="label">County</label>
-            <select>
-                <option value="" disabled selected>Select County</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Germany">Germany</option>
-            </select>
-            <button class="updateProfile" type="button">update profile</button>
-            </div>
-        </form>
-        <footer class="footer">
-            <div class="footerLeft">
-                <a href="#">&#9400; 2019 My Medicare Question - All Rights Reserved.</a>
-            </div>
-
-            <div class="footerRight">
-                <a href="#">Data Design Systems</a>
-            </div>
-        </footer>
+        <table id="drugTable" class="drugTableList">
+            <thead>
+                <tr>Name</tr>
+                <tr>dosage</tr>
+                <tr>supply</tr>
+                <tr>frequency</tr>
+                <tr>actions</tr>
+            </thead>
+            <tbody>
+                <tr>Levetiracetam</tr>
+                <tr>SOL 100MG/ML</tr>
+                <tr>30</tr>
+                <tr>Two Months</tr>
+                <tr><img src=".assets/images/Gripper.png"></tr>
+            </tbody>
+        </table>
         </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+        
+
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css
+        ">
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
+        "></script>
+        <script>
+       
+            $(document).ready(function() {
+                $('#drugTable').DataTable();
+            } );
+
+            // oTable = $('#drugTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+            // $('#myInputTextField').keyup(function(){
+            //     oTable.search($(this).val()).draw() ;
+            // })
+        </script>
     </body>
     
 

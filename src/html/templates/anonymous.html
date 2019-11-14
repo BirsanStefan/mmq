@@ -6,11 +6,143 @@
 <body>
 	
   <div class="wrapper">
-    @@include('../partials/components/leftCol.html')
-    @@include('../partials/components/topLine.html')
-    @@include('../partials/components/footer.html')
-    
 
+    @@include('../partials/components/leftCol.html')
+
+    <div class="mainContent">
+      @@include('../partials/components/topLine.html', {
+        "title": "Anonymous Client List"
+      })
+
+
+      <div class="whiteBox anonymousClientList">
+          
+          <div class="topList">
+            
+            <div class="topListL">
+              <a href="#">
+                <img src="./assets/images/xImg1.png" alt="">
+              </a>
+              <form action="/action_page.php">
+                <label for="typetosearch">FIND LIST</label>
+                <input type="text" id="typetosearch" name="typetosearch" placeholder="TYPE TO SEARCH">
+              </form>
+            </div>
+            
+            <div class="topListR">
+              <a href="#">
+                <img src="./assets/images/xImg1.png" alt="">
+              </a>
+
+              <form action="/action_page.php">
+                <label for="date">DATE:</label>
+                <input type="text" id="date" name="date" placeholder="August 2018">
+              </form>
+              <a href="#">
+                <img src="./assets/images/xImg1.png" alt="">
+              </a>
+            </div>
+              
+          </div>
+
+          @@loop('../partials/components/anonymousClientList.html', [
+            {
+              "number": "1234352455",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "23124134324",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "67567567",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "45345345345",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "453534535",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "4534534535",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "45353453453",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "3453453443",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            },
+
+            {
+              "number": "45345345",
+              
+              "text": "10 Drugs 20 Pharmacies",
+
+              "date": "4 Aug 1:00 PM",
+
+              "icon": "<img src=\"./assets/images/xImg1.png\">"
+            }
+          ])
+
+      </div>
+
+
+      @@include('../partials/components/footer.html')
+    </div>
+    
   </div>
 
   @@include('../partials/scripts/common.html')

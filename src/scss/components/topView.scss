@@ -43,3 +43,126 @@ font-size:20px;
     color: #417505;
 }
 }
+.planDetails {
+    margin-top:10px;
+    padding: 0 20px 0 20px;
+
+    .planTitle {
+        color: #252631;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+    }
+    .planLinks {
+        width:480px;
+}
+    .planLink {
+        width: 30%;
+        height: 35px;
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #778ca2;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        text-align:center;
+        line-height:35px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #417505;
+            color:#fff;
+        }
+        &:active {
+            background-color: #417505;
+            color:#fff;
+        }
+    }
+    
+}
+@media only screen  and (max-width:1440px) {
+    //     // .responsiveBox {
+    //     //     display:flex;
+    //     //     flex-wrap:wrap;
+    // }
+    .topViewCtn {
+        .topViewL {
+            font-size: 18px;
+        }
+        .topViewS {
+            font-size:16px;
+        }
+        .topViewXS {
+            font-size:14px;
+        }
+           }
+        }
+
+@media only screen and (max-width:1224px){
+.topViewCtn {
+        width:45%;
+    
+}
+.planDetails {
+    .planLinks {
+    width:320px;
+}
+}
+}
+@media only screen and (max-width:824px) {
+    .topViewCtn {
+        width:100%;
+    }
+    .topViewCtn {
+        .topViewL {
+            font-size: 25px;
+        }
+        .topViewS {
+            font-size:20px;
+        }
+        .topViewXS {
+            font-size:18px;
+        }
+           }
+        
+        
+}
+@media only screen and (max-width:467px){
+    .planDetails {
+        .planTitle {
+            display:inline-block;
+            width:50%;
+        }
+        .planLinks {
+            width:50%;
+            flex-wrap:wrap;
+
+        }
+        .planLink {
+            width:100%;
+            text-align: right;
+        }
+    }
+}
+@media only screen and (max-width:376px){
+    .topViewCtn {
+        .topViewL {
+            font-size: 18px;
+        }
+        .topViewS {
+            font-size:16px;
+        }
+        .topViewXS {
+            font-size:14px;
+        }
+           }
+    .headerMenuTop {
+        flex-wrap:wrap;
+    }
+    .viewAll {
+margin: 10px 0 10px 0;
+    }
+}

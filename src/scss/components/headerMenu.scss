@@ -1,13 +1,12 @@
 @import '../pages/main.scss';
 
-.headerMenu {
-    width: 1140px;
-    height: 198px;
-    border-radius: 4px;
-    background-color: #ffffff;
+// .headerMenu {
+//     height: 198px;
+//     border-radius: 4px;
+//     background-color: #ffffff;
 
     .headerMenuTop {
-        height: 56px;
+        min-height: 56px;
         border-bottom: 1px solid #e8ecef;
         display:flex;
         align-items:center;
@@ -21,7 +20,7 @@
     }
     .headerMenuContent {
         @extend .flex-space-evenly;
-        height: 142px;
+        min-height: 142px;
         background-color: #ffffff;
 
         .menuItem {
@@ -76,5 +75,14 @@
 
            
         }
+    }
+@media only screen and (max-width:1224px){
+    .headerMenuContent {
+        flex-wrap:wrap;
+}
+}
+@media only screen and (max-width:824px) {
+    .headerMenuContent {
+        padding:18px;
     }
 }

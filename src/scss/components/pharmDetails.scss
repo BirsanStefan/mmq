@@ -1,0 +1,107 @@
+.pharmDetails{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        border-bottom: 1px solid #f2f4f6;
+        width: 100%;
+        left: 0px;
+        bottom: -13px;
+    }
+    .ctrlNrDet{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 50%;
+        @media only screen and (max-width: 1150px){
+            width: 80%;
+        }
+        .ctrlNr{
+            width: 25%;
+            color: #000000;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 6px;
+            @media only screen and (max-width: 1150px){
+                width: 5%;
+            }
+        }
+        .detailsContent{
+            width: 75%;
+            @media only screen and (max-width: 1150px){
+                width: 83%;
+            }
+            a{
+                &:hover{
+                    text-decoration: none;
+                }
+                .pharmDtls{
+                    color: #000000;
+                    font-family: Roboto,sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 4px;
+                    border-radius: 20px;
+                    transition: all .25s linear;
+                    &:hover{
+                        color: #417505;
+                        background: #e8ecef;
+                    }
+                }
+                .pharmDistance{
+                    font-family: Roboto, sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #000000;
+                    margin-top: 20px;
+                    padding: 4px;
+                    border-radius: 20px;
+                    transition: all .25s linear;
+                    &:hover{
+                        color: #417505;
+                        background: #e8ecef;
+                    }
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
+    .selectCheckbox{
+        width: 6%;
+        form{
+            input[type=checkbox], input[type=radio] {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

@@ -2,11 +2,28 @@
 <html>
     @@include('../partials/head/head.html')
   
-    <body id="wrapper">
-        <div class="mainContent">
-        @@include('../partials/components/topView.html')
-        </div>
+    <body>
 
+        <div class="wrapper">
+
+            @@include('../partials/components/leftCol.html')
+        
+            <div class="mainContent">
+                @@include('../partials/components/topLine.html', {
+                    "title": "View Details Page"
+                })
+            
+        @@include('../partials/components/topView.html')
+       
+            <div class="whiteBox planDetails flex-space-btw">
+                <span class="planTitle">plan details</span>
+                <div class="planLinks flex-space-evenly">
+                    <a class="planLink" href="#">kroger</a>
+                    <a class="planLink" href="#">cvs</a>
+                    <a class="planLink" href="mailto:ex@gmail.com">mail order</a>
+                </div>
+
+            </div>
 
         @@include('../partials/scripts/common.html')
     </body>

@@ -14,85 +14,138 @@
       <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     </head>
   
-    <body id="wrapper">
-        <div class="mainContent">
-        <div class="headerMenu">
-            <div class="headerMenuTop padl23">
-                <span class="topMenuTitle">List ID: 123456789</span>
+    <body>
+        <div class="wrapper">
+
+            <div class="leftCol">
+                <div class="logoLeft">
+                    <a href="#">MMQ</a>
+                </div>
+
+                <div class="dashboard">
+                    <img src="./assets/images/xImg.png" alt="">
+                    <span>
+                        DASHBOARD
+                    </span>
+                </div>
             </div>
-            <div class="headerMenuContent">
-                <a class="menuItem" href="#">
-                    <span class="iconItem">
-                           <img class="iconItemImg" src="./assets/images/user-light.png" alt="">
-                    </span>
-                    <div class="menuItemText">
-                    <span class="titleItem">Profile</span>
+        
+            <div class="mainContent">
+                <div class="topLine">
+
+                    <div class="left">
+                        <a class="anonymousClientListL" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                            <span>
+                                Profile
+                            </span>
+                        </a>
                     </div>
-                </a>
-                <a class="menuItem"  href="#">
-                    <span class="iconItem">
-                            <img class="iconItemImg" src="./assets/images/money-bill-alt-light.png" alt="">
-                    </span>
-                    <div class="menuItemText">
-                    <span class="titleItem">Subsidy</span>
-                    <span class="infoItem">Uncertain</span>
+
+                    <div class="right">
+                        <a class="anonymousClientListR" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                        </a>
+
+                        <a class="anonymousClientListR green" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                        </a>
+
+                        <a class="anonymousClientListR pink" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                        </a>
+
+
+                        <a class="anonymousClientListR" href="#">
+                            <img src="./assets/images/barryArmstrong.png" alt="">
+                            <span>Barry Armstrong</span>
+                        </a>
                     </div>
-                </a>
-                <a class="menuItem"  href="#">
-                    <span class="iconItem">
-                        <img class="iconItemImg" src="./assets/images/Shape.png" alt="">
-                    </span>
-                    <div class="menuItemText">
-                    <span class="titleItem">Drug List</span>
-                    <span class="infoItem">6 Drugs</span>
+    
+                </div>
+
+            <div class="content">
+                <div class="whiteBox">
+                    <div class="headerMenuTop padl23">
+                        <span class="topMenuTitle">List ID: 123456789</span>
                     </div>
-                </a>
-                <a class="menuItem"  href="#">
-                    <span class="iconItem">
-                        <img class="iconItemImg" src="./assets/images/first-aid-regular.png" alt="">
-                    </span>
-                    <div class="menuItemText">
-                    <span class="titleItem">Pharmacies</span>
-                    <span class="infoItem">2 Pharmacies</span>
+                    <div class="headerMenuContent">
+                        <a class="menuItem" href="#">
+                            <span class="iconItem">
+                                   <img class="iconItemImg" src="./assets/images/user-light.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                            <span class="titleItem">Profile</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                    <img class="iconItemImg" src="./assets/images/money-bill-alt-light.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                            <span class="titleItem">Subsidy</span>
+                            <span class="infoItem">Uncertain</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg" src="./assets/images/Shape.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                            <span class="titleItem">Drug List</span>
+                            <span class="infoItem">6 Drugs</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg" src="./assets/images/first-aid-regular.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                            <span class="titleItem">Pharmacies</span>
+                            <span class="infoItem">2 Pharmacies</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg" src="./assets/images/list-alt-light.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                            <span class="titleItem">Plans</span>
+                            <span class="infoItem">20 Plans</span>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a class="menuItem"  href="#">
-                    <span class="iconItem">
-                        <img class="iconItemImg" src="./assets/images/list-alt-light.png" alt="">
-                    </span>
-                    <div class="menuItemText">
-                    <span class="titleItem">Plans</span>
-                    <span class="infoItem">20 Plans</span>
+                </div>
+                <form class="formProfile">
+                    <div class="formProfileTitle padl23">
+                        <span class="formTitle">Profile Information</span>
                     </div>
-                </a>
-            </div>
-        </div>
-        <form class="formProfile">
-            <div class="formProfileTitle padl23">
-                <span class="formTitle">Profile Information</span>
-            </div>
-            <div class="formContent">
-            <label class="label">Zip Code</label>
-            <input class="input" type="text" placeholder="45202">
-            <label class="label">County</label>
-            <select>
-                <option value="" disabled selected>Select County</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Germany">Germany</option>
-            </select>
-            <button class="updateProfile" type="button">update profile</button>
-            </div>
-        </form>
-        <footer class="footer">
-            <div class="footerLeft">
-                <a href="#">&#9400; 2019 My Medicare Question - All Rights Reserved.</a>
+                    <div class="formContent">
+                    <label class="label">Zip Code</label>
+                    <input class="input" type="text" placeholder="45202">
+                    <label class="label">County</label>
+                    <select>
+                        <option value="" disabled selected>Select County</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                    <button class="updateProfile" type="button">update profile</button>
+                    </div>
+                </form>
             </div>
 
-            <div class="footerRight">
-                <a href="#">Data Design Systems</a>
+            <footer class="footer">
+                <div class="footerLeft">
+                    <a href="#">&#9400; 2019 My Medicare Question - All Rights Reserved.</a>
+                </div>
+
+                <div class="footerRight">
+                    <a href="#">Data Design Systems</a>
+                </div>
+            </footer>
             </div>
-        </footer>
+            
         </div>
     </body>
     

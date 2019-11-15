@@ -664,7 +664,7 @@
                 background-color: #ffffff;
                 padding: 18px 10px;
                 color: #252631;
-                font-family: "Roboto Light";
+                font-family: "Roboto Light", sans-serif;
                 font-size: 14px;
                 font-weight: 300;
             }
@@ -747,10 +747,23 @@
             .pharmacyTitle{
                 width: 50%;
             }
+            .pharmacyTitle.drugTitle{
+                width: 85%;
+            }
+            .pharmacyTitle.drugSearchTitle{
+                width: 90%;
+                @media only screen and (max-width: 519px){
+                    width: 95%; 
+                    text-align: center;
+                }
+            }
             .selectPharm{
                 width: 25%;
                 text-align: right;
             }
+        }
+        .greenTitle.drug{
+            margin-top: 15px;
         }
 
         .whiteBoxElemMap{
@@ -772,3 +785,7 @@
     }
 }
 /*pharmacies.html END*/
+
+.drugSearchListContent{
+    margin-top: 20px;
+}

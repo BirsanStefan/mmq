@@ -153,7 +153,13 @@
                         </div>
                         <div class="ctrlNrRight">
                             <form action="">
-                                <input class="dosage" type="text" name="dosage" placeholder="Dosage">
+                                <select class="sortByForm">
+                                    <option value="" disabled selected>Dosage</option>
+                                    <option value="option1">Lipitor TAB 10MG</option>
+                                    <option value="option2">Lipitor TAB 20MG</option>
+                                    <option value="option3">Lipitor TAB 40MG</option>
+                                    <option value="option2">Lipitor TAB 80MG</option>
+                                </select>
                                 <input class="frequency" type="text" name="frequency" placeholder="Frequency">
 
                                 <input class="orangeBtn" type="submit" value="ADD DRUG">
@@ -172,7 +178,13 @@
                         </div>
                         <div class="ctrlNrRight">
                             <form action="">
-                                <input class="dosage" type="text" name="dosage" placeholder="Dosage">
+                                <select class="sortByForm">
+                                    <option value="" disabled selected>Dosage</option>
+                                    <option value="option1">Lipitor TAB 10MG</option>
+                                    <option value="option2">Lipitor TAB 20MG</option>
+                                    <option value="option3">Lipitor TAB 40MG</option>
+                                    <option value="option2">Lipitor TAB 80MG</option>
+                                </select>
                                 <input class="frequency" type="text" name="frequency" placeholder="Frequency">
 
                                 <input class="orangeBtn" type="submit" value="ADD DRUG">
@@ -264,6 +276,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+
+
+  <!--Ioana scripts-->
+  <script>
+      window.console = window.console || function(t) {};
+      </script>
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+      }
+  </script>
 
 </body>
 

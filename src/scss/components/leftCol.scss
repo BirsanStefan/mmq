@@ -10,14 +10,14 @@
         display: none;
     }
     .logoLeft{
-        padding-left: 64px;
-        padding-top: 15px;
-        padding-bottom: 30px;
+        padding-left: 60px;
+        padding-top: 10px;
+        padding-bottom: 12px;
         a{
             width: 73px;
             min-height: 45px;
             color: #417505;
-            font-family: "Rubik Light", sans-serif;
+            font-family: "Rubik", sans-serif;
             font-size: 27px;
             font-weight: 300;
             padding: 4px;
@@ -32,10 +32,9 @@
         }
     }
     .dashboard{
-        padding: 19px 59px 18px 34px;
+        padding: 19px 25px;
         background-color: #f8fafb;
         color: #252631;
-        font-family: Roboto, sans-serif;
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0.3px;
@@ -48,8 +47,10 @@
             border-left: 2px solid #7ed321;
             cursor: pointer;
         }
-        img{
-            margin-right: 24px;
+        i{
+            font-size: 18px;
+            color: #7ed321;
+            padding-right: 15px;
         }
     }
 }

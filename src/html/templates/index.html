@@ -4,15 +4,35 @@
 @@include('../partials/head/head.html')
 
 <body>
+	<h3>Here is a list of the pages</h3>
   <div class="wrapper">
-    @@include('../partials/components/entry-section.html')
-    @@include('../partials/components/starter-box.html', {
-    "title": "JustCoded",
-    "intro-text": "Web Starter Kit"
-    })
+
+    <ul>
+    	<li><a href="./anonymous.html" target="_blank">Anonymus Client List</a></li>
+    	<li><a href="./anonymousInd.html" target="_blank">Anonymus Client List Individual</a></li>
+    	<li><a href="./dashboard.html" target="_blank">Dashboard</a></li>
+    	<li><a href="./drugList.html" target="_blank">Drug List</a></li>
+    	<li><a href="./drugSearch.html" target="_blank">Drug Search</a></li>
+    	<li><a href="./login.html" target="_blank">Login</a></li>
+    	<li><a href="./pharmacies.html" target="_blank">Pharmacies</a></li>
+    	<li><a href="./plans.html" target="_blank">Plans</a></li>
+    	<li><a href="./profile.html" target="_blank">Profile</a></li>
+    	<li><a href="./subsidy.html" target="_blank">Subsidy</a></li>
+    	<li><a href="./viewDetailsPage.html" target="_blank">View Details Page</a></li>
+    </ul>
   </div>
 
   @@include('../partials/scripts/common.html')
+
+  <style>
+  	body{
+  		padding: 50px;
+  	}
+  	ul{
+  		/*list-style-type: none;*/
+  		padding-top: 50px;
+  	}
+  </style>
 </body>
 
 </html>

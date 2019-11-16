@@ -12,6 +12,17 @@
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .formProfileTitleButton{
+            font-size: 21px;
+            padding-right: 21px;
+            position: relative;
+            top: -5px;
+            color: #778ca2;
+            cursor: pointer;
+        }
     }
     .formContent {
         padding:0 23px 0 23px;

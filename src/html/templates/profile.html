@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    @@include('../partials/head/head.html')
+  
+    <body>
+        <div class="wrapper">
+
+            @@include('../partials/components/leftCol.html')
+        
+            <div class="mainContent">
+                @@include('../partials/components/topLine.html', {
+                    "title": "Profile"
+                    })
+
+            <div class="content">
+                @@include('../partials/components/headerMenu.html')
+                @@include('../partials/components/profileInfo.html')
+            </div>
+
+            @@include('../partials/components/footer.html')
+            </div>
+            
+        </div>
+    </body>
+    
+
+</html>
+

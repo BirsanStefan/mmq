@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Web Starter Kit</title>
+      <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+      <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+      <!-- Bootsrap -->
+      <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    </head>
+  
+    <body>
+        <div class="wrapper">
+
+            <div class="leftCol">
+                <div class="logoLeft">
+                    <a href="#">MMQ</a>
+                </div>
+
+                <div class="dashboard">
+                    <img src="./assets/images/xImg.png" alt="">
+                    <span>
+                        DASHBOARD
+                    </span>
+                </div>
+            </div>
+        
+            <div class="mainContent">
+                <div class="topLine">
+
+                    <div class="left">
+                        <a class="anonymousClientListL" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                            <span>
+                                Drug List
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="right">
+                        <a class="anonymousClientListR" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                        </a>
+
+                        <a class="anonymousClientListR green" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                        </a>
+
+                        <a class="anonymousClientListR pink" href="#">
+                            <img src="./assets/images/xImg1.png" alt="">
+                        </a>
+
+
+                        <a class="anonymousClientListR" href="#">
+                            <img src="./assets/images/barryArmstrong.png" alt="">
+                            <span>Barry Armstrong</span>
+                        </a>
+                    </div>
+    
+                </div>
+
+                <div class="whiteBox">
+                    <div class="whiteBox">
+                        <div class="headerMenuTop padl23">
+                            <span class="topMenuTitle">List ID: 123456789</span>
+                        </div>
+                        <div class="headerMenuContent">
+                            <a class="menuItem" href="#">
+                                <span class="iconItem">
+                                       <img class="iconItemImg" src="./assets/images/user-light.png" alt="">
+                                </span>
+                                <div class="menuItemText">
+                                <span class="titleItem">Profile</span>
+                                </div>
+                            </a>
+                            <a class="menuItem"  href="#">
+                                <span class="iconItem">
+                                        <img class="iconItemImg" src="./assets/images/money-bill-alt-light.png" alt="">
+                                </span>
+                                <div class="menuItemText">
+                                <span class="titleItem">Subsidy</span>
+                                <span class="infoItem">Uncertain</span>
+                                </div>
+                            </a>
+                            <a class="menuItem"  href="#">
+                                <span class="iconItem">
+                                    <img class="iconItemImg" src="./assets/images/Shape.png" alt="">
+                                </span>
+                                <div class="menuItemText">
+                                <span class="titleItem">Drug List</span>
+                                <span class="infoItem">6 Drugs</span>
+                                </div>
+                            </a>
+                            <a class="menuItem"  href="#">
+                                <span class="iconItem">
+                                    <img class="iconItemImg" src="./assets/images/first-aid-regular.png" alt="">
+                                </span>
+                                <div class="menuItemText">
+                                <span class="titleItem">Pharmacies</span>
+                                <span class="infoItem">2 Pharmacies</span>
+                                </div>
+                            </a>
+                            <a class="menuItem"  href="#">
+                                <span class="iconItem">
+                                    <img class="iconItemImg" src="./assets/images/list-alt-light.png" alt="">
+                                </span>
+                                <div class="menuItemText">
+                                <span class="titleItem">Plans</span>
+                                <span class="infoItem">20 Plans</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="whiteBox drugListTable">
+                    <table id="drugTable" class="drugTableList">
+                        <thead class="tableHead">
+                            <tr class="tableRow rca">
+                                <th class="rla">Name</th>
+                                <th>dosage</th>
+                                <th>supply</th>
+                                <th>frequency</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tableRow rca">
+                                <td class="rla">Levetiracetam</td>
+                                <td class="upc">SOL 100MG/ML</td>
+                                <td>30</td>
+                                <td class="ctl">Two Months</td>
+                                <td><a href="#"><img src="./assets/images/Gripper.png" alt=""></a></td>
+                            </tr>
+                            <tr class="tableRow rca">
+                                <td class="rla">Levetiracetam</td>
+                                <td class="upc">SOL 100MG/ML</td>
+                                <td>30</td>
+                                <td class="ctl">Two Months</td>
+                                <td><a href="#"><img src="./assets/images/Gripper.png"></a></td>
+                            </tr>
+                            <tr class="tableRow rca">
+                                <td class="rla">Levetiracetam</td>
+                                <td class="upc">SOL 100MG/ML</td>
+                                <td>30</td>
+                                <td class="ctl">Two Months</td>
+                                <td><a href="#"><img src="./assets/images/Gripper.png"></a></td>
+                            </tr>
+                            <tr class="tableRow rca">
+                                <td class="rla">Levetiracetam</td>
+                                <td class="upc">SOL 100MG/ML</td>
+                                <td>30</td>
+                                <td class="ctl">Two Months</td>
+                                <td><a href="#"><img src="./assets/images/Gripper.png"></a></td>
+                            </tr>
+                            <tr class="tableRow rca">
+                                <td class="rla">test</td>
+                                <td class="upc">SOL 100MG/ML</td>
+                                <td>30</td>
+                                <td class="ctl">Two Months</td>
+                                <td><a href="#"><img src="./assets/images/Gripper.png"></a></td>
+                            </tr>
+                            <tr class="tableRow rca">
+                                <td class="rla">Levetiracetam</td>
+                                <td class="upc">SOL 100MG/ML</td>
+                                <td>30</td>
+                                <td class="ctl">Two Months</td>
+                                <td><a href="#"><img src="./assets/images/Gripper.png"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+
+
+        <!--Ioana scripts-->
+        <script>
+            window.console = window.console || function(t) {};
+            </script>
+            <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+        </script>
+        
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
+        "></script>
+        <script>
+       
+            // $(document).ready(function() {
+            //     $('#drugTable').DataTable();
+            // } );
+    
+            oTable = $('#drugTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+            $('#myInputTextField').keyup(function(){
+                oTable.search($(this).val()).draw() ;
+            })
+        </script>
+       
+    </body>
+</html>
+

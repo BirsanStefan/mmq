@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+	
+  <div class="wrapper">
+
+    @@include('../partials/components/leftCol.html')
+
+    <div class="mainContent">
+
+        @@include('../partials/components/topLine.html', {
+            "title": "Anonymous Client Details"
+        })
+
+
+        <div class="whiteBox">
+            @@include('../partials/components/headerMenu.html')
+        </div>
+
+
+        <div class="whiteBox pharmaciesTitle">
+            <a href="#">Add Drug</a>
+        </div>
+        
+
+        <div class="pharmaciesBox">
+            <div class="whiteBoxElem">
+                <form action="" class="pharmaciesForm">
+                    <input type="text" id="email" name="email" placeholder="Search for drug by entering the full or partial name.">
+
+                    <input class="greenBtn" type="submit" value="FIND DRUG">
+                </form>
+
+                <div class="greenTitle drug">
+                    <div class="hashtag">#</div>
+                    <div class="pharmacyTitle drugSearchTitle">Matching Drug Results</div>
+                </div>
+
+                @@loop('../partials/components/matchingDrugResults.html', [
+                    {
+                        "ctrlNumber": "1",
+                        "title": "atorvastatin calcium"
+                    },
+                    {
+                        "ctrlNumber": "2",
+                        "title": "Lipitor"
+                    }
+                ])
+            </div>
+
+            <div class="whiteBoxElem">
+                <div class="greenTitle">
+                    <div class="pharmacyTitle drugTitle">Drug List</div>
+                </div>
+                
+                <div class="drugSearchListContent">
+                        @@loop('../partials/components/drugSearchList.html', [
+                        {
+                            "title": "atorvastatin calcium Tab 10 MG",
+                            "description": "30 per month<br>Welgreens #12345"
+                        },
+                        {
+                            "title": "atorvastatin calcium Tab 10 MG",
+                            "description": "30 per month<br>Welgreens #12345"
+                        },
+                        {
+                            "title": "atorvastatin calcium Tab 10 MG",
+                            "description": "30 per month<br>Welgreens #12345"
+                        },
+                        {
+                            "title": "atorvastatin calcium Tab 10 MG",
+                            "description": "30 per month<br>Welgreens #12345"
+                        }
+                    ])
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+  </div>
+
+  @@include('../partials/scripts/common.html')
+
+</body>
+
+</html>

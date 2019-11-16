@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    @@include('../partials/head/head.html')
+  
+    <body>
+        <div class="wrapper">
+
+            @@include('../partials/components/leftCol.html')
+        
+            <div class="mainContent">
+                @@include('../partials/components/topLine.html', {
+                    "title": "Drug List"
+                })
+
+                <div class="whiteBox">
+                    @@include('../partials/components/headerMenu.html')
+                </div>
+                <div class="whiteBox drugListTable">
+                    @@include('../partials/components/drugListTable.html')
+                </div>
+            </div>
+        </div>
+
+
+        @@include('../partials/scripts/common.html')
+        
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
+        "></script>
+        <script>
+       
+            // $(document).ready(function() {
+            //     $('#drugTable').DataTable();
+            // } );
+    
+            oTable = $('#drugTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+            $('#myInputTextField').keyup(function(){
+                oTable.search($(this).val()).draw() ;
+            })
+        </script>
+       
+    </body>
+</html>
+

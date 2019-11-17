@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+	
+  <div class="wrapper">
+
+    @@include('../partials/components/leftCol.html')
+
+    <div class="mainContent">
+      @@include('../partials/components/topLine.html', {
+        "title": "Anonymous Client List"
+      })
+
+
+        <div class="whiteBox anonymousClientList anonymousModal">
+          
+            <div class="topList">
+                
+                <div class="topListL">
+                    <a href="#">
+                        <img src="./assets/images/xImg1.png" alt="">
+                    </a>
+                    <form action="/action_page.php">
+                        <label for="typetosearch">FIND LIST</label>
+                        <input type="text" id="typetosearch" name="typetosearch" placeholder="TYPE TO SEARCH">
+                    </form>
+                </div>
+                
+                <div class="topListR">
+                    <a href="#">
+                        <img src="./assets/images/xImg1.png" alt="">
+                    </a>
+
+                    <form action="/action_page.php">
+                        <label for="date">DATE:</label>
+                        <input type="text" id="date" name="date" placeholder="August 2018">
+                    </form>
+                    <a href="#">
+                        <img src="./assets/images/xImg1.png" alt="">
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="createNewList">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                
+                    <!-- Modal Header -->
+                    <div class="modal-header createNewListGreen">
+                        <div class="greenModalTitle">
+                            <h3>Create New List</h3>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body myBody">
+
+                        <div class="title top">
+                            <h5>
+                                <a href="#">Anonymous User Information</a>
+                            </h5>
+                            <form class="modal-form">
+                                <input type="text" placeholder="Please provide a custom identifer. This identifier will be stored outside of this system and will only be available to be retrieved by contacting My Medicare Question.">
+                            </form>
+                        </div>
+                        
+                        <div class="title bottom">
+                            <h5>
+                                <a href="#">Custom Identifier</a>
+                            </h5>
+                            <form class="modal-form">
+                                <input type="text" placeholder="Enter Custom Identifier Here">
+                            </form>
+                        </div>
+
+                        <form action="" class="anonymousModalBtn">
+                            <input type="submit" value="Create List">
+                        </form>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+      @@include('../partials/components/footer.html')
+    </div>
+    
+  </div>
+
+  @@include('../partials/scripts/common.html')
+
+    <script>
+
+        $('#createNewList').modal({
+        // show: true
+        });
+
+    </script>
+</body>
+
+</html>

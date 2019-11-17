@@ -916,6 +916,131 @@
     .menuContent{}
 }
 
-
-
 /*plans.html END*/
+
+
+/*anonymousModal.html START*/
+.whiteBox.anonymousModal{
+    min-height: calc(100vh - 196px);
+}
+
+/*The Modal*/
+#createNewList{
+    .modal-content {
+        width: 360px;
+        height: 436px;
+        margin-left: auto;
+        margin-right: auto;
+        .createNewListGreen {
+            background: #417505;
+            align-items: center;
+            .greenModalTitle{
+                h3{
+                    color: #fff;
+                    font-family: Roboto, sans-serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 0;
+                } 
+            } 
+            .close {
+                padding: 0 20px;
+                margin: 0;
+                color: white;
+            }
+        }
+        .myBody{
+            padding: 20px;
+            .title{
+                h5 {
+                    margin-bottom: 10px;
+                    a{
+                        color: #252631;
+                        font-family: Roboto,sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        letter-spacing: 0.2px;
+                        &:hover{
+                            text-decoration: none;
+                            color: #417505;
+                        }
+                    }
+                }
+                .modal-form{
+                    input[type="text"]{
+                        color: #98a9bc;
+                        font-family: Roboto, sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        margin-bottom: 50px;
+                        border: none;
+                        width: 100%;
+                        margin-left: -10px;
+                    }
+                    
+                }
+            }
+            .title.bottom{
+                position: relative;
+                padding-top: 15px;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    border-bottom: 1px solid #e8ecef;
+                    width: 100%;
+                    top: 0;
+                }
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    border-bottom: 1px solid #e8ecef;
+                    width: 100%;
+                    bottom: 0;
+                }
+                h5{
+                    a{
+                        font-size: 16px;
+                    }
+                }
+                .modal-form{
+                    input[type="text"]{
+                        padding-bottom: 10px;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+            }
+
+            .anonymousModalBtn{
+                margin-top: 15px;
+                text-align: right;
+                input[type="submit"] {
+                    border: none;
+                    background: #f8fafb;
+                    color: #417505;
+                    font-family: Rubik;
+                    font-size: 14px;
+                    font-weight: 400;
+                    width: 90px;
+                    height: 35px;
+                    border-radius: 5px;
+                    text-align: center;
+                    transition: all .25s linear;
+                    padding: 4px;
+                    border-radius: 15px 2px 15px 2px;
+                    &:hover{
+                        background: #417505;
+                        color: #f8fafb;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*anonymousModal.html END*/

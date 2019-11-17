@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Starter Kit</title>
+  <title>MMQ</title>
   <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
   <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <!-- Bootsrap -->
@@ -16,14 +18,22 @@
 </head>
 
 <body>
+	<h3>Here is a list of the pages</h3>
   <div class="wrapper">
-    <div class="entry-section">
-      <div id="home-canvas"></div>
-    </div>
-    <section class="starter-box">
-      <h1>JustCoded</h1>
-      <p>Web Starter Kit</p>
-    </section>
+
+    <ul>
+    	<li><a href="./anonymous.html" target="_blank">Anonymus Client List</a></li>
+    	<li><a href="./anonymousInd.html" target="_blank">Anonymus Client List Individual</a></li>
+    	<li><a href="./dashboard.html" target="_blank">Dashboard</a></li>
+    	<li><a href="./drugList.html" target="_blank">Drug List</a></li>
+    	<li><a href="./drugSearch.html" target="_blank">Drug Search</a></li>
+    	<li><a href="./login.html" target="_blank">Login</a></li>
+    	<li><a href="./pharmacies.html" target="_blank">Pharmacies</a></li>
+    	<li><a href="./plans.html" target="_blank">Plans</a></li>
+    	<li><a href="./profile.html" target="_blank">Profile</a></li>
+    	<li><a href="./subsidy.html" target="_blank">Subsidy</a></li>
+    	<li><a href="./viewDetailsPage.html" target="_blank">View Details Page</a></li>
+    </ul>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -44,6 +54,16 @@
           window.parent.postMessage("resize", "*");
       }
   </script>
+
+  <style>
+  	body{
+  		padding: 50px;
+  	}
+  	ul{
+  		/*list-style-type: none;*/
+  		padding-top: 50px;
+  	}
+  </style>
 </body>
 
 </html>

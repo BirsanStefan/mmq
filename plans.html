@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>MMQ</title>
+	  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+	  <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap" rel="stylesheet">
+
+	  <!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	  <!-- Bootsrap -->
+	  <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+	</head>
+    <div class="wrapper">
+
+        <div class="leftCol">
+            <div class="logoLeft">
+                <a href="#">MMQ</a>
+            </div>
+
+            <div class="dashboard">
+                <i class="far fa-compass"></i>
+                <span>
+                    DASHBOARD
+                </span>
+            </div>
+        </div>
+
+        <div class="mainContent">
+
+            <div class="topLine">
+
+                <div class="left">
+                    <a class="anonymousClientListL" href="#">
+                        <i class="fas fa-bars"></i>
+                        <span>
+                            Anonymous Client Details
+                        </span>
+                    </a>
+                </div>
+
+                <div class="right">
+                    <a class="anonymousClientListR" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+
+                    <a class="anonymousClientListR green" href="#">
+                        <i class="far fa-envelope"></i>
+                    </a>
+
+                    <a class="anonymousClientListR pink" href="#">
+                        <i class="far fa-bell"></i>
+                    </a>
+
+
+                    <a class="anonymousClientListR" href="#">
+                        <div class="profileImg" style="background-image: url(./assets/images/serveimage.jpeg);">
+                
+                        </div>
+                        <span>Barry Armstrong</span>
+                    </a>
+                </div>
+    
+            </div>
+
+
+            <div class="whiteBox">
+                <div class="whiteBox">
+                    <div class="headerMenuTop padl23">
+                        <span class="topMenuTitle">List ID: 123456789</span>
+                    </div>
+                    <div class="headerMenuContent">
+                        <a class="menuItem" href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg por" src="./assets/images/user-light.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                                <span class="titleItem">Profile</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg" src="./assets/images/money-bill-alt-light.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                                <span class="titleItem">Subsidy</span>
+                                <span class="infoItem">Uncertain</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg" src="./assets/images/Shape.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                                <span class="titleItem">Drug List</span>
+                                <span class="infoItem">6 Drugs</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg por" src="./assets/images/first-aid-regular.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                                <span class="titleItem">Pharmacies</span>
+                                <span class="infoItem ">2 Pharmacies</span>
+                            </div>
+                        </a>
+                        <a class="menuItem"  href="#">
+                            <span class="iconItem">
+                                <img class="iconItemImg por" src="./assets/images/list-alt-light.png" alt="">
+                            </span>
+                            <div class="menuItemText">
+                                <span class="titleItem">Plans</span>
+                                <span class="infoItem">20 Plans</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="whiteBox pharmaciesTitle plansTop">
+                
+                <a class="plansTitle" href="#">Plans</a>
+                
+                <div class="sortBy">
+                    <form>
+                        <select class="sortByForm">
+                            <option value="" disabled selected>Sort By</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="whiteBox plans">
+
+                <div class="menuWrap">
+
+                    <div class="menuLink">
+                         <ul class="menuList nav-tabs">
+                            <li class="menuElement active">
+                                <div class="whiteBoxMenuItem"><a href="#taba">MAPD</a></div>
+                            </li>
+                            <li class="menuElement">
+                                <div class="whiteBoxMenuItem"><a href="#tabb">PDP</a></div>
+                            </li>
+                            <li class="menuElement">
+                                <div class="whiteBoxMenuItem"><a href="#tabc">MA Only</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menuContent tab-content">
+                        <div id="taba" class="tab-pane active">
+                            <div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">a SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div><div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">a SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div><div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">a SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabb" class="tab-pane">
+                            <div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">b SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div><div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">b SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div><div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">b SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabc" class="tab-pane">
+                            <div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">c SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div><div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">c SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div><div class="headerMenuContent plansListContent">
+                                <div class="plansL">
+                                    <h3><a href="#">c SilverScript Choice Rx (PDP)</a></h3>
+                                    <h4>Premium:<span> $30.80</span></h4>
+                                </div>
+                                <div class="plansC">
+                                    <div class="plansS">S5601 - 028</div>
+                                    <h4>Deductible: <span>$435</span> (Tiers 3,4,5)</h4>
+                                </div>
+                                <div class="plansR">
+                                    <form action="" class="pharmaciesForm plansRForm">
+                                        <input class="greenBtn" type="submit" value="VIEW DETAILS">
+                                    </form>
+                                    <h3>Total Estimated Cost: <span>$2,943</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+
+
+    <!--Ioana scripts-->
+    <script>
+        window.console = window.console || function(t) {};
+        </script>
+        <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+    <script id="rendered-js">
+        window.addEventListener("load", function () {
+            // store tabs variable
+            var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+            function myTabClicks(tabClickEvent) {
+                for (var i = 0; i < myTabs.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+                myTabs[i].classList.remove("active");
+                }window.CP.exitedLoop(0);
+                var clickedTab = tabClickEvent.currentTarget;
+                clickedTab.classList.add("active");
+                tabClickEvent.preventDefault();
+                var myContentPanes = document.querySelectorAll(".tab-pane");
+                for (i = 0; i < myContentPanes.length; i++) {if (window.CP.shouldStopExecution(1)) break;
+                    myContentPanes[i].classList.remove("active");
+                }window.CP.exitedLoop(1);
+                var anchorReference = tabClickEvent.target;
+                var activePaneId = anchorReference.getAttribute("href");
+                var activePane = document.querySelector(activePaneId);
+                activePane.classList.add("active");
+            }
+            for (i = 0; i < myTabs.length; i++) {if (window.CP.shouldStopExecution(2)) break;
+                myTabs[i].addEventListener("click", myTabClicks);
+            }window.CP.exitedLoop(2);
+        });
+        //# sourceURL=pen.js
+    </script>
+</body>
+
+</html>

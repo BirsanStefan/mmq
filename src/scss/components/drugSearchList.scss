@@ -1,0 +1,99 @@
+.drugSearchList{
+    position: relative;
+    margin-bottom: 25px;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        border-bottom: 1px solid #f2f4f6;
+        width: 100%;
+        bottom: -8px;
+    }
+    h3{
+        a{
+            color: #000000;
+            font-family: Roboto, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            padding: 4px;
+            border-radius: 15px;
+            transition: all .25s linear;
+            &:hover{
+                text-decoration: none;
+                color: #fff;
+                background: #ffab2b;
+            }
+        }
+    }
+    .drugSListBox{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        .drugSListL{
+            width: 30%;
+            .drugSListDescr{
+                color: #9b9b9b;
+                font-family: Roboto, sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 4px;
+            }
+        }
+        .drugSListR{
+            width: 70%;
+            form{
+                text-align: right;
+                .change, .remove{
+                    width: 80px;
+                    height: 33px;
+                    text-align: center;
+                    border: none;
+                    border-radius: 2px 2px 2px;
+                    color: #ffffff;
+                    font-family: "Roboto Medium",sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.3px;
+                    transition: all .25s linear;
+                    &:hover{
+                        font-weight: bold;
+                    }
+                    input[type='text']{
+                        color: #ffffff;
+                        font-family: "Roboto Medium", sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 0.3px;
+                    }
+                }
+                .change{
+                    background-color: #ffab2b;
+                    &:hover{
+                        color: #ffab2b;
+                        background: #fff4e2;
+                        border: 1px solid #ffab2b;
+                    }
+                }
+                .remove{
+                    background-color: #98a9bc;
+                    margin-left: 10px;
+                    &:hover{
+                        color: #98a9bc;
+                        background: #f4f6fa;
+                        border: 1px solid #98a9bc;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,298 @@
 <!DOCTYPE html>
-<html>
-    <div>eu</div>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMQ</title>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Bootsrap -->
+  <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+	
+  <div class="wrapper">
+
+    <div class="leftCol">
+        <div class="logoLeft">
+            <a href="#">MMQ</a>
+        </div>
+
+        <div class="dashboard">
+            <i class="far fa-compass"></i>
+            <span>
+                DASHBOARD
+            </span>
+        </div>
+    </div>
+
+    <div class="mainContent">
+
+        <div class="topLine">
+
+            <div class="left">
+                <a class="anonymousClientListL" href="#">
+                    <i class="fas fa-bars"></i>
+                    <span>
+                        Anonymous Client Details
+                    </span>
+                </a>
+            </div>
+
+            <div class="right">
+                <a class="anonymousClientListR" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+
+                <a class="anonymousClientListR green" href="#">
+                    <i class="far fa-envelope"></i>
+                </a>
+
+                <a class="anonymousClientListR pink" href="#">
+                    <i class="far fa-bell"></i>
+                </a>
+
+
+                <a class="anonymousClientListR" href="#">
+                    <div class="profileImg" style="background-image: url(./assets/images/serveimage.jpeg);">
+                
+                    </div>
+                    <span>Barry Armstrong</span>
+                </a>
+            </div>
+    
+        </div>
+
+
+        <div class="whiteBox">
+            <div class="whiteBox">
+                <div class="headerMenuTop padl23">
+                    <span class="topMenuTitle">List ID: 123456789</span>
+                </div>
+                <div class="headerMenuContent">
+                    <a class="menuItem" href="#">
+                        <span class="iconItem">
+                            <img class="iconItemImg por" src="./assets/images/user-light.png" alt="">
+                        </span>
+                        <div class="menuItemText">
+                            <span class="titleItem">Profile</span>
+                        </div>
+                    </a>
+                    <a class="menuItem"  href="#">
+                        <span class="iconItem">
+                            <img class="iconItemImg" src="./assets/images/money-bill-alt-light.png" alt="">
+                        </span>
+                        <div class="menuItemText">
+                            <span class="titleItem">Subsidy</span>
+                            <span class="infoItem">Uncertain</span>
+                        </div>
+                    </a>
+                    <a class="menuItem"  href="#">
+                        <span class="iconItem">
+                            <img class="iconItemImg" src="./assets/images/Shape.png" alt="">
+                        </span>
+                        <div class="menuItemText">
+                            <span class="titleItem">Drug List</span>
+                            <span class="infoItem">6 Drugs</span>
+                        </div>
+                    </a>
+                    <a class="menuItem"  href="#">
+                        <span class="iconItem">
+                            <img class="iconItemImg por" src="./assets/images/first-aid-regular.png" alt="">
+                        </span>
+                        <div class="menuItemText">
+                            <span class="titleItem">Pharmacies</span>
+                            <span class="infoItem ">2 Pharmacies</span>
+                        </div>
+                    </a>
+                    <a class="menuItem"  href="#">
+                        <span class="iconItem">
+                            <img class="iconItemImg por" src="./assets/images/list-alt-light.png" alt="">
+                        </span>
+                        <div class="menuItemText">
+                            <span class="titleItem">Plans</span>
+                            <span class="infoItem">20 Plans</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="whiteBox pharmaciesTitle">
+            <a href="#">Add Drug</a>
+        </div>
+        
+
+        <div class="pharmaciesBox">
+            <div class="whiteBoxElem">
+                <form action="" class="pharmaciesForm">
+                    <input type="text" id="email" name="email" placeholder="Search for drug by entering the full or partial name.">
+
+                    <input class="greenBtn" type="submit" value="FIND DRUG">
+                </form>
+
+                <div class="greenTitle drug">
+                    <div class="hashtag">#</div>
+                    <div class="pharmacyTitle drugSearchTitle">Matching Drug Results</div>
+                </div>
+
+                <div class="drugDetails">
+                    <div class="ctrlNr">1</div>
+
+                    <div class="ctrlNrDrug">
+                        <div class="ctrlNrLeft">
+                            <h3><a href="#">atorvastatin calcium</a></h3>
+                            <form action="">
+                                <input type="text" name="quantity" placeholder="Quantity">
+                            </form>
+                        </div>
+                        <div class="ctrlNrRight">
+                            <form action="">
+                                <select class="sortByForm">
+                                    <option value="" disabled selected>Dosage</option>
+                                    <option value="option1">Lipitor TAB 10MG</option>
+                                    <option value="option2">Lipitor TAB 20MG</option>
+                                    <option value="option3">Lipitor TAB 40MG</option>
+                                    <option value="option2">Lipitor TAB 80MG</option>
+                                </select>
+                                <input class="frequency" type="text" name="frequency" placeholder="Frequency">
+
+                                <input class="orangeBtn" type="submit" value="ADD DRUG">
+                            </form>
+                        </div>
+                    </div>
+                </div><div class="drugDetails">
+                    <div class="ctrlNr">2</div>
+
+                    <div class="ctrlNrDrug">
+                        <div class="ctrlNrLeft">
+                            <h3><a href="#">Lipitor</a></h3>
+                            <form action="">
+                                <input type="text" name="quantity" placeholder="Quantity">
+                            </form>
+                        </div>
+                        <div class="ctrlNrRight">
+                            <form action="">
+                                <select class="sortByForm">
+                                    <option value="" disabled selected>Dosage</option>
+                                    <option value="option1">Lipitor TAB 10MG</option>
+                                    <option value="option2">Lipitor TAB 20MG</option>
+                                    <option value="option3">Lipitor TAB 40MG</option>
+                                    <option value="option2">Lipitor TAB 80MG</option>
+                                </select>
+                                <input class="frequency" type="text" name="frequency" placeholder="Frequency">
+
+                                <input class="orangeBtn" type="submit" value="ADD DRUG">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="whiteBoxElem">
+                <div class="greenTitle">
+                    <div class="pharmacyTitle drugTitle">Drug List</div>
+                </div>
+                
+                <div class="drugSearchListContent">
+                        <div class="drugSearchList">
+
+                            <h3><a href="#">atorvastatin calcium Tab 10 MG</a></h3>
+
+                            <div class="drugSListBox">
+                                <div class="drugSListL">
+                                    <div class="drugSListDescr">30 per month<br>Welgreens #12345</div>
+                                </div>
+                                <div class="drugSListR">
+                                    <form action="">
+                                        <input class="change" type="submit" value="CHANGE">
+                                        <input class="remove" type="submit" value="REMOVE">
+                                    </form>
+                                </div>
+                            </div>
+                        </div><div class="drugSearchList">
+
+                            <h3><a href="#">atorvastatin calcium Tab 10 MG</a></h3>
+
+                            <div class="drugSListBox">
+                                <div class="drugSListL">
+                                    <div class="drugSListDescr">30 per month<br>Welgreens #12345</div>
+                                </div>
+                                <div class="drugSListR">
+                                    <form action="">
+                                        <input class="change" type="submit" value="CHANGE">
+                                        <input class="remove" type="submit" value="REMOVE">
+                                    </form>
+                                </div>
+                            </div>
+                        </div><div class="drugSearchList">
+
+                            <h3><a href="#">atorvastatin calcium Tab 10 MG</a></h3>
+
+                            <div class="drugSListBox">
+                                <div class="drugSListL">
+                                    <div class="drugSListDescr">30 per month<br>Welgreens #12345</div>
+                                </div>
+                                <div class="drugSListR">
+                                    <form action="">
+                                        <input class="change" type="submit" value="CHANGE">
+                                        <input class="remove" type="submit" value="REMOVE">
+                                    </form>
+                                </div>
+                            </div>
+                        </div><div class="drugSearchList">
+
+                            <h3><a href="#">atorvastatin calcium Tab 10 MG</a></h3>
+
+                            <div class="drugSListBox">
+                                <div class="drugSListL">
+                                    <div class="drugSListDescr">30 per month<br>Welgreens #12345</div>
+                                </div>
+                                <div class="drugSListR">
+                                    <form action="">
+                                        <input class="change" type="submit" value="CHANGE">
+                                        <input class="remove" type="submit" value="REMOVE">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+
+
+  <!--Ioana scripts-->
+  <script>
+      window.console = window.console || function(t) {};
+      </script>
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+      }
+  </script>
+
+</body>
+
 </html>

@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Starter Kit</title>
+  <title>MMQ</title>
   <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
   <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <!-- Bootsrap -->
@@ -44,27 +46,31 @@
                 <label for="password">Password</label><br>
                 <input type="text" id="password" name="password" placeholder="Enter your password" class="contactUsFormLItem italic">
             </div>
+
+            <div class="loginRememberRecover">
+              <div class="loginCheckbox">
+                <label>
+                  <input type="checkbox" name="vehicle1" value="Bike">
+                  <span>Remember me</span>
+                </label>
+              </div>
+              
+              <div class="loginRecover">
+                <a href="#">Recover password</a>
+              </div>
+            </div>
+
+            <button type="submit" class="signInBtn">
+              <span>SIGN IN</span>
+            </button>
+
               
           </form>
         </div>
 
-        <div class="loginRememberRecover">
-          <div class="loginCheckbox">
-            <form action="/action_page.php">
-              <input type="checkbox" name="vehicle1" value="Bike">
-              <a href="#">Remember me</a>
-            </form>
-          </div>
-          
-          <div class="loginRecover">
-            <a href="#">Recover password</a>
-          </div>
-        </div>
+        
 
-        <div class="signInBtn">
-          <a href="#">SIGN IN</a>
-        </div>
-
+        
       </div>
 
 
@@ -80,6 +86,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+
+
+  <!--Ioana scripts-->
+  <script>
+      window.console = window.console || function(t) {};
+      </script>
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+      }
+  </script>
 </body>
 
 </html>

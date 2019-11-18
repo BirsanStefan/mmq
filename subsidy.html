@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Starter Kit</title>
+  <title>MMQ</title>
   <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
   <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <!-- Bootsrap -->
@@ -25,7 +27,7 @@
         </div>
 
         <div class="dashboard">
-            <img src="./assets/images/xImg.png" alt="">
+            <i class="far fa-compass"></i>
             <span>
                 DASHBOARD
             </span>
@@ -37,7 +39,7 @@
 
             <div class="left">
                 <a class="anonymousClientListL" href="#">
-                    <img src="./assets/images/xImg1.png" alt="">
+                    <i class="fas fa-bars"></i>
                     <span>
                         Anonymous Client Details
                     </span>
@@ -46,20 +48,22 @@
 
             <div class="right">
                 <a class="anonymousClientListR" href="#">
-                    <img src="./assets/images/xImg1.png" alt="">
+                    <i class="fas fa-search"></i>
                 </a>
 
                 <a class="anonymousClientListR green" href="#">
-                    <img src="./assets/images/xImg1.png" alt="">
+                    <i class="far fa-envelope"></i>
                 </a>
 
                 <a class="anonymousClientListR pink" href="#">
-                    <img src="./assets/images/xImg1.png" alt="">
+                    <i class="far fa-bell"></i>
                 </a>
 
 
                 <a class="anonymousClientListR" href="#">
-                    <img src="./assets/images/barryArmstrong.png" alt="">
+                    <div class="profileImg" style="background-image: url(./assets/images/serveimage.jpeg);">
+                
+                    </div>
                     <span>Barry Armstrong</span>
                 </a>
             </div>
@@ -74,19 +78,19 @@
             <div class="headerMenuContent">
                 <a class="menuItem" href="#">
                     <span class="iconItem">
-                           <img class="iconItemImg" src="./assets/images/user-light.png" alt="">
+                        <img class="iconItemImg por" src="./assets/images/user-light.png" alt="">
                     </span>
                     <div class="menuItemText">
-                    <span class="titleItem">Profile</span>
+                        <span class="titleItem">Profile</span>
                     </div>
                 </a>
                 <a class="menuItem"  href="#">
                     <span class="iconItem">
-                            <img class="iconItemImg" src="./assets/images/money-bill-alt-light.png" alt="">
+                        <img class="iconItemImg" src="./assets/images/money-bill-alt-light.png" alt="">
                     </span>
                     <div class="menuItemText">
-                    <span class="titleItem">Subsidy</span>
-                    <span class="infoItem">Uncertain</span>
+                        <span class="titleItem">Subsidy</span>
+                        <span class="infoItem">Uncertain</span>
                     </div>
                 </a>
                 <a class="menuItem"  href="#">
@@ -94,26 +98,26 @@
                         <img class="iconItemImg" src="./assets/images/Shape.png" alt="">
                     </span>
                     <div class="menuItemText">
-                    <span class="titleItem">Drug List</span>
-                    <span class="infoItem">6 Drugs</span>
+                        <span class="titleItem">Drug List</span>
+                        <span class="infoItem">6 Drugs</span>
                     </div>
                 </a>
                 <a class="menuItem"  href="#">
                     <span class="iconItem">
-                        <img class="iconItemImg" src="./assets/images/first-aid-regular.png" alt="">
+                        <img class="iconItemImg por" src="./assets/images/first-aid-regular.png" alt="">
                     </span>
                     <div class="menuItemText">
-                    <span class="titleItem">Pharmacies</span>
-                    <span class="infoItem">2 Pharmacies</span>
+                        <span class="titleItem">Pharmacies</span>
+                        <span class="infoItem ">2 Pharmacies</span>
                     </div>
                 </a>
                 <a class="menuItem"  href="#">
                     <span class="iconItem">
-                        <img class="iconItemImg" src="./assets/images/list-alt-light.png" alt="">
+                        <img class="iconItemImg por" src="./assets/images/list-alt-light.png" alt="">
                     </span>
                     <div class="menuItemText">
-                    <span class="titleItem">Plans</span>
-                    <span class="infoItem">20 Plans</span>
+                        <span class="titleItem">Plans</span>
+                        <span class="infoItem">20 Plans</span>
                     </div>
                 </a>
             </div>
@@ -122,10 +126,13 @@
 
         <div class="whiteBox subsidy">
             <div class="whiteBoxTitle">
-                <h3><a href="#">Medicare Extra Help</a></h3>
-                <a href="#" class="titleImg">
-                    <img src="./assets/images/xImg1.png" alt="">
-                </a>
+                <h3>
+                    <a href="#">Medicare Extra Help</a>
+                    <div class="whiteBoxTitleButton">
+                        ...
+                    </div>
+                </h3>
+                
             </div>
 
             <div class="whiteBoxContent">
@@ -134,45 +141,56 @@
                 <form action="" class="subsidyForm">
                     <fieldset id="group1">
                         <div class="input">
-                            <input type="radio" value="value1" name="group1"><a href="#"> Not Eligible</a><br>
+                            <input type="radio" id="value1" name="group1">
+                            <label for="value1"> Not Eligible</label>
                         </div>
 
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#"> Receiving Medicaid as well as Medicare</a><br>
+                            <input type="radio" id="value2" name="group1">
+                            <label for="value2"> Receiving Medicaid as well as Medicare</label>
                         </div>
                         
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#"> Medicare Savings Program (MSP)</a><br>
+                            <input type="radio" id="value3" name="group1">
+                            <label for="value3"> Medicare Savings Program (MSP)</label>
                         </div>
                         
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#">Partial Extra Help</a><br>
+                            <input type="radio" id="value4" name="group1">
+                            <label for="value4">Partial Extra Help</label>
                         </div>
 
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#"> Uncertain</a><br>
+                            <input type="radio" id="value5" name="group1">
+                            <label for="value5"> Uncertain <span class="red">( Select 1 option)</span></label>
+
+                            <fieldset id="group2">
+                                
+                                <div class="input">
+                                    <input type="radio" id="value11" name="group2">
+                                    <label for="value11"> 25%</label>
+                                </div>
+
+                                <div class="input">
+                                    <input type="radio" id="value12" name="group2">
+                                    <label for="value12"> 50%</label>
+                                </div>
+
+                                <div class="input">
+                                    <input type="radio" id="value13" name="group2">
+                                    <label for="value13"> 75%</label>
+                                </div>
+
+                                <div class="input">
+                                    <input type="radio" id="value14" name="group2">
+                                    <label for="value14"> 100%</label>
+                                </div>
+
+                            </fieldset>
                         </div>
                     </fieldset>
                     
-                    <fieldset id="group2">
-                        
-                        <div class="input">
-                            <input type="radio" value="value1" name="group2"><a href="#"> 25%</a><br>
-                        </div>
-
-                        <div class="input">
-                            <input type="radio" value="value2" name="group2"><a href="#"> 50%</a><br>
-                        </div>
-
-                        <div class="input">
-                            <input type="radio" value="value3" name="group2"><a href="#"> 75%</a><br>
-                        </div>
-
-                        <div class="input">
-                            <input type="radio" value="value3" name="group2"><a href="#"> 100%</a>
-                        </div>
-
-                    </fieldset>
+                    
 
                     <input class="greenBtn" type="submit" value="SAVE SUBSIDY">
                 </form>
@@ -201,6 +219,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+
+
+  <!--Ioana scripts-->
+  <script>
+      window.console = window.console || function(t) {};
+      </script>
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+      }
+  </script>
 </body>
 
 </html>

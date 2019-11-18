@@ -20,10 +20,13 @@
 
         <div class="whiteBox subsidy">
             <div class="whiteBoxTitle">
-                <h3><a href="#">Medicare Extra Help</a></h3>
-                <a href="#" class="titleImg">
-                    <img src="./assets/images/xImg1.png" alt="">
-                </a>
+                <h3>
+                    <a href="#">Medicare Extra Help</a>
+                    <div class="whiteBoxTitleButton">
+                        ...
+                    </div>
+                </h3>
+                
             </div>
 
             <div class="whiteBoxContent">
@@ -32,45 +35,56 @@
                 <form action="" class="subsidyForm">
                     <fieldset id="group1">
                         <div class="input">
-                            <input type="radio" value="value1" name="group1"><a href="#"> Not Eligible</a><br>
+                            <input type="radio" id="value1" name="group1">
+                            <label for="value1"> Not Eligible</label>
                         </div>
 
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#"> Receiving Medicaid as well as Medicare</a><br>
+                            <input type="radio" id="value2" name="group1">
+                            <label for="value2"> Receiving Medicaid as well as Medicare</label>
                         </div>
                         
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#"> Medicare Savings Program (MSP)</a><br>
+                            <input type="radio" id="value3" name="group1">
+                            <label for="value3"> Medicare Savings Program (MSP)</label>
                         </div>
                         
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#">Partial Extra Help</a><br>
+                            <input type="radio" id="value4" name="group1">
+                            <label for="value4">Partial Extra Help</label>
                         </div>
 
                         <div class="input">
-                            <input type="radio" value="value2" name="group1"><a href="#"> Uncertain</a><br>
+                            <input type="radio" id="value5" name="group1">
+                            <label for="value5"> Uncertain <span class="red">( Select 1 option)</span></label>
+
+                            <fieldset id="group2">
+                                
+                                <div class="input">
+                                    <input type="radio" id="value11" name="group2">
+                                    <label for="value11"> 25%</label>
+                                </div>
+
+                                <div class="input">
+                                    <input type="radio" id="value12" name="group2">
+                                    <label for="value12"> 50%</label>
+                                </div>
+
+                                <div class="input">
+                                    <input type="radio" id="value13" name="group2">
+                                    <label for="value13"> 75%</label>
+                                </div>
+
+                                <div class="input">
+                                    <input type="radio" id="value14" name="group2">
+                                    <label for="value14"> 100%</label>
+                                </div>
+
+                            </fieldset>
                         </div>
                     </fieldset>
                     
-                    <fieldset id="group2">
-                        
-                        <div class="input">
-                            <input type="radio" value="value1" name="group2"><a href="#"> 25%</a><br>
-                        </div>
-
-                        <div class="input">
-                            <input type="radio" value="value2" name="group2"><a href="#"> 50%</a><br>
-                        </div>
-
-                        <div class="input">
-                            <input type="radio" value="value3" name="group2"><a href="#"> 75%</a><br>
-                        </div>
-
-                        <div class="input">
-                            <input type="radio" value="value3" name="group2"><a href="#"> 100%</a>
-                        </div>
-
-                    </fieldset>
+                    
 
                     <input class="greenBtn" type="submit" value="SAVE SUBSIDY">
                 </form>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+	@@include('../partials/head/head.html')
+    <div class="wrapper">
+
+        @@include('../partials/components/leftCol.html')
+
+        <div class="mainContent">
+
+            @@include('../partials/components/topLine.html', {
+                "title": "Anonymous Client Details"
+            })
+
+
+            <div class="whiteBox">
+                @@include('../partials/components/headerMenu.html')
+            </div>
+
+
+            <div class="whiteBox pharmaciesTitle plansTop">
+                
+                <a class="plansTitle" href="#">Plans</a>
+                
+                <div class="sortBy">
+                    <form>
+                        <select class="sortByForm">
+                            <option value="" disabled selected>Sort By</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="whiteBox plans">
+
+                <div class="menuWrap">
+
+                    <div class="menuLink">
+                         <ul class="menuList nav-tabs">
+                            <li class="menuElement active">
+                                <div class="whiteBoxMenuItem"><a href="#taba">MAPD</a></div>
+                            </li>
+                            <li class="menuElement">
+                                <div class="whiteBoxMenuItem"><a href="#tabb">PDP</a></div>
+                            </li>
+                            <li class="menuElement">
+                                <div class="whiteBoxMenuItem"><a href="#tabc">MA Only</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menuContent tab-content">
+                        <div id="taba" class="tab-pane active">
+                            @@loop('../partials/components/plansList.html', [
+                                {
+                                    "title": "a SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+                                    
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                },
+                                {
+                                    "title": "a SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+                                    
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                },
+                                {
+                                    "title": "a SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+                                    
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                }
+                            ])
+                        </div>
+                        <div id="tabb" class="tab-pane">
+                            @@loop('../partials/components/plansList.html', [
+                                {
+                                    "title": "b SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+                                    
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                },
+                                {
+                                    "title": "b SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+                                    
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                },
+                                {
+                                    "title": "b SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+                                    
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                }
+                            ])
+                        </div>
+                        <div id="tabc" class="tab-pane">
+                            @@loop('../partials/components/plansList.html', [
+                                {
+                                    "title": "c SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                },
+                                {
+                                    "title": "c SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>" 
+                                },
+                                {
+                                    "title": "c SilverScript Choice Rx (PDP)",
+
+                                    "typeA": "Premium:<span> $30.80</span>",
+
+                                    "sNumber": "S5601 - 028",
+
+                                    "typeB": "Deductible: <span>$435</span> (Tiers 3,4,5)",
+                                    
+                                    "input": "<input class=\"greenBtn\" type=\"submit\" value=\"VIEW DETAILS\">",
+
+                                    "total": "Total Estimated Cost: <span>$2,943</span>"
+                                }
+                            ])
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    
+    </div>
+
+    @@include('../partials/scripts/common.html')
+
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+    <script id="rendered-js">
+        window.addEventListener("load", function () {
+            // store tabs variable
+            var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+            function myTabClicks(tabClickEvent) {
+                for (var i = 0; i < myTabs.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+                myTabs[i].classList.remove("active");
+                }window.CP.exitedLoop(0);
+                var clickedTab = tabClickEvent.currentTarget;
+                clickedTab.classList.add("active");
+                tabClickEvent.preventDefault();
+                var myContentPanes = document.querySelectorAll(".tab-pane");
+                for (i = 0; i < myContentPanes.length; i++) {if (window.CP.shouldStopExecution(1)) break;
+                    myContentPanes[i].classList.remove("active");
+                }window.CP.exitedLoop(1);
+                var anchorReference = tabClickEvent.target;
+                var activePaneId = anchorReference.getAttribute("href");
+                var activePane = document.querySelector(activePaneId);
+                activePane.classList.add("active");
+            }
+            for (i = 0; i < myTabs.length; i++) {if (window.CP.shouldStopExecution(2)) break;
+                myTabs[i].addEventListener("click", myTabClicks);
+            }window.CP.exitedLoop(2);
+        });
+        //# sourceURL=pen.js
+    </script>
+</body>
+
+</html>

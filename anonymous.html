@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Starter Kit</title>
+  <title>MMQ</title>
   <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
   <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <!-- Bootsrap -->
@@ -25,7 +27,7 @@
         </div>
 
         <div class="dashboard">
-            <img src="./assets/images/xImg.png" alt="">
+            <i class="far fa-compass"></i>
             <span>
                 DASHBOARD
             </span>
@@ -37,7 +39,7 @@
 
           <div class="left">
               <a class="anonymousClientListL" href="#">
-                  <img src="./assets/images/xImg1.png" alt="">
+                  <i class="fas fa-bars"></i>
                   <span>
                       Anonymous Client List
                   </span>
@@ -46,204 +48,227 @@
 
           <div class="right">
               <a class="anonymousClientListR" href="#">
-                  <img src="./assets/images/xImg1.png" alt="">
+                  <i class="fas fa-search"></i>
               </a>
 
               <a class="anonymousClientListR green" href="#">
-                  <img src="./assets/images/xImg1.png" alt="">
+                  <i class="far fa-envelope"></i>
               </a>
 
               <a class="anonymousClientListR pink" href="#">
-                  <img src="./assets/images/xImg1.png" alt="">
+                  <i class="far fa-bell"></i>
               </a>
 
 
               <a class="anonymousClientListR" href="#">
-                  <img src="./assets/images/barryArmstrong.png" alt="">
+                  <div class="profileImg" style="background-image: url(./assets/images/serveimage.jpeg);">
+                
+                  </div>
                   <span>Barry Armstrong</span>
               </a>
           </div>
     
       </div>
-
-
-      <div class="whiteBox anonymousClientList">
-          
-          <div class="topList">
+    
+      <div class="mainCR">
+        <div class="whiteBox anonymousClientList">
             
-            <div class="topListL">
-              <a href="#">
-                <img src="./assets/images/xImg1.png" alt="">
-              </a>
-              <form action="/action_page.php">
-                <label for="typetosearch">FIND LIST</label>
-                <input type="text" id="typetosearch" name="typetosearch" placeholder="TYPE TO SEARCH">
-              </form>
-            </div>
-            
-            <div class="topListR">
-              <a href="#">
-                <img src="./assets/images/xImg1.png" alt="">
-              </a>
-
-              <form action="/action_page.php">
-                <label for="date">DATE:</label>
-                <input type="text" id="date" name="date" placeholder="August 2018">
-              </form>
-              <a href="#">
-                <img src="./assets/images/xImg1.png" alt="">
-              </a>
-            </div>
+            <div class="topList">
               
-          </div>
-
-          <div class="contentList">
-              <div class="contentListBorder">
-
-                  <div class="contentListL">
-                      <a href="#">
-                      1234352455<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
-
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
-
+              <div class="topListL">
+                <a href="#">
+                  <i class="fas fa-search"></i>
+                </a>
+                <form action="/action_page.php">
+                  <label for="typetosearch">FIND LIST</label>
+                  <input type="text" id="typetosearch" name="typetosearch" placeholder="TYPE TO SEARCH">
+                </form>
               </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+              
+              <div class="topListR">
+                <a href="#">
+                  <i class="far fa-calendar-alt"></i>
+                </a>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      23124134324<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
-
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
-
+                <form action="/action_page.php">
+                  <label for="date">DATE:</label>
+                  <input type="text" id="date" name="date" placeholder="August 2018">
+                </form>
+                <a href="#">
+                  <i class="fas fa-chevron-down"></i>
+                </a>
               </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+                
+            </div>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      67567567<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
+            <div class="contentList">
+                <div class="contentListBorder">
 
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
+                    <div class="contentListL">
+                        <a href="#">
+                        1234352455<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
 
-              </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      45345345345<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
 
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
+                    <div class="contentListL">
+                        <a href="#">
+                        23124134324<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
 
-              </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      453534535<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
 
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
+                    <div class="contentListL">
+                        <a href="#">
+                        67567567<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
 
-              </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      4534534535<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
 
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
+                    <div class="contentListL">
+                        <a href="#">
+                        45345345345<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
 
-              </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      45353453453<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
 
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
+                    <div class="contentListL">
+                        <a href="#">
+                        453534535<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
 
-              </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      3453453443<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
 
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
+                    <div class="contentListL">
+                        <a href="#">
+                        4534534535<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
 
-              </div>
-          </div><div class="contentList">
-              <div class="contentListBorder">
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
 
-                  <div class="contentListL">
-                      <a href="#">
-                      45345345<br>
-                      <span>10 Drugs 20 Pharmacies</span>
-                      </a>
-                  </div>
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
 
-                  <div class="contentListR">
-            
-                      <div class="contentListDate"><img src="./assets/images/xImg1.png"> 4 Aug 1:00 PM</div>
-                  </div>
+                    <div class="contentListL">
+                        <a href="#">
+                        45353453453<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
 
-              </div>
-          </div>
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
 
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
+
+                    <div class="contentListL">
+                        <a href="#">
+                        3453453443<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
+
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
+
+                </div>
+            </div><div class="contentList">
+                <div class="contentListBorder">
+
+                    <div class="contentListL">
+                        <a href="#">
+                        45345345<br>
+                        <span>10 Drugs 20 Pharmacies</span>
+                        </a>
+                    </div>
+
+                    <div class="contentListR">
+                        <div class="contentListDate"> 4 Aug 1:00 PM </div>
+                        <div class="more">
+                            ...
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
       </div>
+
+      
 
 
       <footer class="footer">
@@ -265,6 +290,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"></script>
+
+
+
+  <!--Ioana scripts-->
+  <script>
+      window.console = window.console || function(t) {};
+      </script>
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+      }
+  </script>
 </body>
 
 </html>

@@ -5,7 +5,6 @@
     tr,td, th {
         border: 2px solid #9b9b9b;
         text-transform: capitalize;
-        color: #000000;
         font-size: 18px;
         font-weight: 400;
     }
@@ -18,6 +17,14 @@
     tbody>tr {
         height: 84px;
     }
+    
+      
+        th {
+            height:40px;
+            box-sizing: border-box;
+        }
+    }
+
     .tableHead {
         height:40px;
         font-size: 18px;
@@ -26,13 +33,7 @@
         color: #ffffff;
         font-size: 18px;
         text-align: center;
-      
-        th {
-            height:40px;
-            box-sizing: border-box;
-        }
     }
-}
 
 .tablePrescription {
     width: 275px;
@@ -115,4 +116,54 @@
         width:100%;
         text-transform: capitalize;
     }
+}
+
+
+.tablePlan {
+    margin-top:53px;
+    position:relative;
+    width: calc(100vw - 290px);
+    margin-left: auto;
+    margin-right: auto;
+    & th,tr,td {
+    border:none;
+    
+    }
+     caption {
+         position:absolute;
+         top:-40px;
+         width:100%;
+         text-align:left;
+         padding-left:8px;
+         display:flex;
+         align-items: center;
+     }
+     .headSubtitle {
+        height: 32px;
+        background-color: #e8ecef;
+        text-transform: capitalize;
+        width:100%;
+        th {
+            text-align:center;
+        }
+     }
+     tbody tr {
+        
+         border-bottom:3px solid #e8ecef;
+         .month {
+            width:30%;
+            text-align:left;
+            padding-left:84px;
+            text-transform: capitalize;
+        }
+     }
+     
+     td {
+         width:20%;
+     }
+     td span {
+         display:block;
+         width:100%;
+     }
+    
 }

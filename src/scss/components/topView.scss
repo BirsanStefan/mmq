@@ -43,46 +43,7 @@ font-size:20px;
     color: #417505;
 }
 }
-.planDetails {
-    margin-top:10px;
-    padding: 0 20px 0 20px;
 
-    .planTitle {
-        color: #252631;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.2px;
-        text-transform: capitalize;
-    }
-    .planLinks {
-        width:480px;
-}
-    .planLink {
-        width: 30%;
-        height: 35px;
-        display: inline-block;
-        border-radius: 4px;
-        background-color: #fff;
-        color: #778ca2;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.3px;
-        text-transform: uppercase;
-        text-align:center;
-        line-height:35px;
-        text-decoration: none;
-
-        &:hover {
-            background-color: #417505;
-            color:#fff;
-        }
-        &:active {
-            background-color: #417505;
-            color:#fff;
-        }
-    }
-    
-}
 @media only screen  and (max-width:1440px) {
     //     // .responsiveBox {
     //     //     display:flex;

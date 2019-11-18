@@ -1,0 +1,118 @@
+.tableContent {
+    padding-top:62px;
+}
+.generalTable {
+    tr,td, th {
+        border: 2px solid #9b9b9b;
+        text-transform: capitalize;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    tbody>tr:first-child {
+        height:120px;
+    }
+    tbody>tr:last-child {
+        height: 80px;
+    }
+    tbody>tr {
+        height: 84px;
+    }
+    .tableHead {
+        height:40px;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: #417505;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+      
+        th {
+            height:40px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.tablePrescription {
+    width: 275px;
+    tr:first-child>td:first-child {
+        padding-top:48px;
+    }
+    td {
+        position:relative;
+
+        .tier {
+            position:absolute;
+            bottom:0;
+            right:0;
+            width: 84px;
+            height: 36px;
+            border: 1px solid #979797;
+            border-bottom:none;
+            border-right:none;
+            text-align: center;
+            line-height:36px;
+            color: #417505;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    .drugPrescCtn {
+        color: #252631;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0 5px 0 20px;
+        flex-wrap:wrap;
+        
+        
+        
+        .drugTitlePresc {
+            font-size:20px;
+        }
+     
+    }
+
+}
+.tableCosts {
+    width: 550px;
+    position:relative;
+     th, td {
+         text-align:center;
+     }
+     tbody td {
+         padding:15px;
+     }
+  
+}
+.caption {
+    width: calc(100% - 17.5%);
+    height: 40px;
+    position:absolute;
+    top:-40px;
+    right:0;
+    background-color: #e8ecef;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    text-align:center;
+    line-height: 40px;
+}
+.tableRestriction {
+    width: 245px;
+    position:relative;
+    th, td {
+        text-align:center;
+        padding: 0 10px 0 10px;
+    }
+
+    th{
+        
+        font-size: 12px;
+    }
+    .captRestrict {
+        width:100%;
+        text-transform: capitalize;
+    }
+}
